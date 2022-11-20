@@ -1,9 +1,26 @@
-# dio-live-dynamodb
-Repositório para o live coding do dia 30/09/2021 sobre o Amazon DynamoDB
+# Utilização do Amazon Dynamo DB
+Implementação de database NoSQL no serviço Dynamo DB da AWS.
+
+## Preparação do ambiente de teste
+
+* Fazer o Download e instalar o pacote Amazon CLI para execução em terminal;
+* No Windows, foi utilizado o prompt do Git Bash para acesso ao projeto, ao serviço da AWS e execução dos comandos relativos ao Dynamo DB;
+* Necessário dar permissões de acesso ao Dynamo DB ao usuário que vai acessar o serviço. Senão dá erro de permissão no terminal e não funciona;
+* Nos comandos de criação de indexes secundários, só pode ser criado 1 index por vez e deve-se, logo após a criação do comando, monitorar o status do index no serviço do Dynamo DB. Leva-se, em média, 5 min para que o index seja criado para que possamos, então, executar as queries relativas a essas chaves secundárias.
+
+## Configuração do AWS
+
+Ao executar o "aws configure", são solicitados as chaves de acesso contidas no csv das credenciais de usuário, a região padrão conforme referência na documentação da AWS e o formato de saída, também conforme documentação. Caso não seja especificado, o padrão é o JSON.
+
+Referências:
+
+* Overview: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
+* AWS CLI - Download: https://aws.amazon.com/pt/cli/
+* AWS CLI Command Reference: https://docs.aws.amazon.com/cli/latest/index.html
 
 ### Serviço utilizado
-  - Amazon DynamoDB
-  - Amazon CLI para execução em linha de comando
+  - Amazon DynamoDB - Monitorar no serviço o retorno dos comandos CLI;
+  - Amazon CLI para execução em linha de comando - Usar o git bash para executar.
 
 ### Comandos para execução do experimento:
 
